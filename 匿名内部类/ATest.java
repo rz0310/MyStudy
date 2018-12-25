@@ -1,11 +1,11 @@
-package ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½;
+package ÄäÃûÄÚ²¿Àà;
 
 interface A {
 	void test();
 }
 /*
- * ï¿½ï¿½java8Ö®Ç°ï¿½ï¿½javaÒªï¿½ó±»¾Ö²ï¿½ï¿½Ú²ï¿½ï¿½à¡¢ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÄ¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½finalï¿½ï¿½ï¿½Î£ï¿½
- * java8Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½Ã´ï¿½Ã¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½àµ±ï¿½ï¿½ï¿½Ô¶ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½finalï¿½ï¿½ï¿½Î¡ï¿½
+ * ÔÚjava8Ö®Ç°£¬javaÒªÇó±»¾Ö²¿ÄÚ²¿Àà¡¢ÄäÃûÄÚ²¿Àà·ÃÎÊµÄ¾Ö²¿±äÁ¿±ØÐëÊ¹ÓÃfinalÐÞÊÎ£¬
+ * java8Ö®ºó£¬Èç¹û¾Ö²¿±äÁ¿±»ÄäÃûÄÚ²¿Àà·ÃÎÊ£¬ÄÇÃ´¸Ã¾Ö²¿±äÁ¿Ïàµ±ÓÚ×Ô¶¯Ê¹ÓÃÁËfinalÐÞÊÎ¡£
  */
 public class ATest {
 	
@@ -13,10 +13,11 @@ public class ATest {
 		int age = 8;
 		A a = new A() {
 			public void test() {
-	//			ï¿½ï¿½java8ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä½«ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½,ageï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½finalï¿½ï¿½ï¿½ï¿½
-	//			ï¿½ï¿½java8ï¿½ï¿½Ê¼,ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½,ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê·ï¿½finalï¿½Ä¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+	//			ÔÚjava8ÒÔÇ°ÒÔÏÂÓï¾ä½«ÌáÊ¾´íÎó,age±ØÐëÊ¹ÓÃfinalÐÞÊÎ
+	//			´Ójava8¿ªÊ¼,ÄäÃûÄÚ²¿Àà,¾Ö²¿ÄÚ²¿ÀàÔÊÐí·ÃÎÊ·ÇfinalµÄ¾Ö²¿±äÁ¿
 				System.out.println(age);
 			}
 		};
 		a.test();
+	}
 }
